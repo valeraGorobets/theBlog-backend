@@ -5,9 +5,10 @@ import { UserModule } from './controllers/user/user.module';
 import { PostsModule } from './controllers/posts/posts.module';
 import { AuthModule } from './controllers/auth/auth.module';
 import { RandomErrorMiddleware } from './middlewares/random-error-middleware.middleware';
+import { WebSocketsModule } from './ws/websockets.module';
 
 @Module({
-	imports: [UserModule, PostsModule, AuthModule],
+	imports: [UserModule, PostsModule, AuthModule, WebSocketsModule],
 	controllers: [AppController],
 	providers: [AppService],
 })
