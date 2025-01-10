@@ -5,7 +5,7 @@ import * as WebSocket from 'ws';
 export class WebSocketsService {
 	private readonly logger = new Logger(WebSocketsService.name);
 	private wss: WebSocket.Server;
-	private readonly port: number = 8000;
+	private readonly port: number = 3001;
 
 	private getRandomNumber(start: number, end: number): number {
 		return Math.floor(Math.random() * (end - start + 1) + start);
